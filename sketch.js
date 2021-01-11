@@ -16,7 +16,7 @@ function setup() {
   
   sky = createSprite(width / 2, height / 2, 20, 20);
   sky.addImage("sky", skyImage);
-  sky.scale = width / 700;
+  sky.scale = width / 800;
   
   rocket = createSprite(width / 2, height - 100, 20, 20);
   rocket.addImage("we have liftoff", rocketImage);
