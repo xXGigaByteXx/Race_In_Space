@@ -28,8 +28,10 @@ function setup() {
 
 function draw() {
   background("black");
-  if(tower.y > height) {
-    tower.y = 0;
+  
+  sky.velocityY = score / 15;
+  if(sky.y > height) {
+    sky.y = 0;
   }
   
   drawSprites();
