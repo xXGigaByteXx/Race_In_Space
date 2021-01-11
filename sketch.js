@@ -28,7 +28,7 @@ function setup() {
 
 function draw() {
   background("black");
-  if(tower.y > 600) {
+  if(tower.y > height) {
     tower.y = 0;
   }
   
