@@ -29,11 +29,6 @@ function setup() {
 function draw() {
   background("black");
   
-  sky.velocityY = 200;
-  if(sky.y > height) {
-    sky.y = 0;
-  }
-  
   drawSprites();
   if(rocket.isTouching(meteorGroup)) {
     rocket.destroy();
