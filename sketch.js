@@ -28,8 +28,9 @@ function setup() {
 
 function draw() {
   background("black");
-  
-  
+  if(tower.y > 600) {
+    tower.y = 0;
+  }
   
   drawSprites();
   if(rocket.isTouching(meteorGroup)) {
