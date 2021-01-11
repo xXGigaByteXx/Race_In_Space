@@ -29,7 +29,7 @@ function setup() {
 function draw() {
   background("black");
   
-  sky.velocityY = score / 15;
+  sky.velocityY = 300;
   if(sky.y > height / 3) {
     sky.y = 0;
   }
