@@ -30,7 +30,7 @@ function draw() {
   background("black");
   
   sky.velocityY = score / 15;
-  if(sky.y > height / 2) {
+  if(sky.y > height / 3) {
     sky.y = 0;
   }
   
