@@ -30,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-  background("black");
+  background("white");
   
   drawSprites();
   if(rocket.isTouching(meteorGroup)) {
