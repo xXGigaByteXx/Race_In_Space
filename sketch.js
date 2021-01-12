@@ -1,27 +1,30 @@
 var rocket, rocketImage, rocketSound;
 var meteor, meteorImage, meteorGroup;
-var sky, skyImage;
+// var sky, skyImage;
+var star, starImage, starGroup;
 var score = 0;
 var gameState = true;
 function preload() {
   
   rocketImage = loadImage("rocket.png");
   meteorImage = loadImage("meteor.png");
-  skyImage = loadImage("sky.gif");
+  //skyImage = loadImage("sky.gif");
+  starImage = loadImage("star.png");
   
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   
-  sky = createSprite(width / 2, height / 2, 20, 20);
+  /*sky = createSprite(width / 2, height / 2, 20, 20);
   sky.addImage("sky", skyImage);
-  sky.scale = width / 800;
+  sky.scale = width / 800;*/
   
   rocket = createSprite(width / 2, height - 100, 20, 20);
   rocket.addImage("we have liftoff", rocketImage);
   rocket.scale = width / 12500;
   
+  starGroup = new Group();
   meteorGroup = new Group();
   
 }
@@ -73,3 +76,14 @@ function meteors() {
     
   }
 }
+function stars() {
+  var r = Math.round(random(0, width));
+  if(frameCount % 1 == 0) {
+    star = createSprite(r, 0, 5, 5);
+    star.velocityY = 1000;
+    star.lifetime = height / 1000
+    star.addImage("bright", starImage);
+    meteorGroup.add(star);
+  }
+}
+  
