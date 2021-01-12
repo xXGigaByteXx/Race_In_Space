@@ -66,13 +66,9 @@ function meteors() {
     meteor.addImage("BOOOOM!", meteorImage);
     meteor.scale = 0.45;
     meteorGroup.add(meteor)
-    if(score < 300) {
-      meteor.velocityY = score / 15;
-      meteor.lifetime = height / (score / 15);
-    }
     else {
       meteor.velocityY = 30;
-      meteor.lifeTime = 30;
+      meteor.lifeTime = height / 30;
     }
     
   }
