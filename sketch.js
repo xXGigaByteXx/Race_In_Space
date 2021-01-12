@@ -61,7 +61,7 @@ function control() {
 }
 function meteors() {
   var r = Math.round(random(0, width))
-  if(frameCount % 1 == 0) {
+  if(frameCount % 20 == 0) {
     meteor = createSprite(r, 0, 20, 20);
     meteor.addImage("BOOOOM!", meteorImage);
     meteor.scale = 0.45;
@@ -79,12 +79,10 @@ function meteors() {
 }
 function stars() {
   var r = Math.round(random(0, width));
-  if(frameCount % 1 == 0) {
-    star = createSprite(r, 0, 5, 5);
-    star.velocityY = 1000;
-    star.lifetime = height / 1000
-    star.addImage("bright", starImage);
-    starGroup.add(star);
-  }
+   star = createSprite(r, 0, 5, 5);
+   star.velocityY = 1000;
+   star.lifetime = height / 1000
+   star.addImage("bright", starImage);
+   starGroup.add(star);
 }
   
