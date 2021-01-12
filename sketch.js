@@ -42,6 +42,7 @@ function draw() {
     //drawSprites();
     control();
     meteors();
+    stars();
     score += Math.round(getFrameRate() / 60);
   }
   else {
