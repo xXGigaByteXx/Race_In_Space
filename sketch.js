@@ -66,12 +66,11 @@ function meteors() {
     meteor.addImage("BOOOOM!", meteorImage);
     meteor.scale = 0.45;
     meteorGroup.add(meteor)
-    else {
-      meteor.velocityY = 30;
-      meteor.lifeTime = height / 30;
-    }
-    
   }
+   else {
+     meteor.velocityY = 30;
+     meteor.lifeTime = height / 30;
+   }
 }
 function stars() {
   var r = Math.round(random(0, width));
