@@ -1,6 +1,5 @@
 var rocket, rocketImage, rocketSound;
 var meteor, meteorImage, meteorGroup;
-// var sky, skyImage;
 var star, starImage, starGroup;
 var score = 0;
 var gameState = true;
@@ -8,17 +7,12 @@ function preload() {
   
   rocketImage = loadImage("rocket.png");
   meteorImage = loadImage("meteor.png");
-  //skyImage = loadImage("sky.gif");
   starImage = loadImage("star.png");
   
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
-  /*sky = createSprite(width / 2, height / 2, 20, 20);
-  sky.addImage("sky", skyImage);
-  sky.scale = width / 800;*/
   
   rocket = createSprite(width / 2, height - 100, 20, 20);
   rocket.addImage("we have liftoff", rocketImage);
@@ -39,7 +33,6 @@ function draw() {
     gameState = false;
   }
   if(gameState) {
-    //drawSprites();
     control();
     meteors();
     stars();
@@ -48,7 +41,6 @@ function draw() {
   else {
     text("U DED", (width / 2) - 12.5, height / 2);
   }
-  //text("X: " + mouseX + ", Y: " + mouseY, mouseX, mouseY);
   text(score, width - 60, height - 60);
 }
 function control() {
@@ -72,12 +64,12 @@ function meteors() {
      meteor.lifeTime = height / 30;
    }
 }
-function stars() {
+/*function stars() {
   var r = Math.round(random(0, width));
    star = createSprite(r, 0, 5, 5);
    star.velocityY = 1000;
    star.lifetime = height / 1000
    star.addImage("bright", starImage);
    starGroup.add(star);
-}
+}*/
   
