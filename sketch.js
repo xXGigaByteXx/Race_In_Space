@@ -40,8 +40,9 @@ function draw() {
     rocket.visible = true;
   }
   else {
-    textSize(50);
-    text("U DED", (width / 2) - 12.5, height / 2);
+    textSize(35);
+    text("YOU DIED", (width / 2) - 15, height / 2);
+    text("Press \"r\" or \"/\" to restart!", (width / 2) - 22.5, (height / 2) - 10)
     
   }
   
