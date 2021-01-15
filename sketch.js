@@ -3,6 +3,7 @@ var meteor, meteorImage, meteorGroup;
 var star, starImage, starGroup;
 var score = 0;
 var gameState = true;
+textSize(35);
 function preload() {
   
   rocketImage = loadImage("rocket.png");
@@ -40,7 +41,6 @@ function draw() {
     rocket.visible = true;
   }
   else {
-    textSize(35);
     text("YOU DIED", (width / 2) - 15, height / 2);
     text("Press \"r\" or \"/\" to restart!", (width / 2) - 22.5, (height / 2) - 10)
     
