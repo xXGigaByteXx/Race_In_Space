@@ -40,7 +40,7 @@ function draw() {
     rocket.visible = true;
   }
   else {
-    textSize(30);
+    textSize(50);
     text("U DED", (width / 2) - 12.5, height / 2);
     
   }
