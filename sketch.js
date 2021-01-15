@@ -30,7 +30,7 @@ function draw() {
   if(rocket.isTouching(meteorGroup)) {
     rocket.destroy();
     meteorGroup.destroyEach();
-    gameState = false;
+    //gameState = false;
   }
   if(gameState) {
     control();
