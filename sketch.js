@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-  background("black");
+  background("green");
   
   drawSprites();
   if(rocket.isTouching(meteorGroup)) {
