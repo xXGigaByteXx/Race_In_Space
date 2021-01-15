@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-  background("green");
+  background("black");
   
   drawSprites();
   if(rocket.isTouching(meteorGroup)) {
@@ -32,12 +32,12 @@ function draw() {
     meteorGroup.destroyEach();
     //gameState = false;
   }
-  if(gameState) {
+  //if(gameState) {
     control();
     meteors();
     stars();
     score += Math.round(getFrameRate() / 60);
-  }
+  //}
   else {
     text("U DED", (width / 2) - 12.5, height / 2);
   }
