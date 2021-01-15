@@ -40,7 +40,9 @@ function draw() {
     rocket.visible = true;
   }
   else {
+    textSize(30);
     text("U DED", (width / 2) - 12.5, height / 2);
+    
   }
   
   if(keyDown("r") && gameState == false || keyDown("slash") && gameState == false) {
